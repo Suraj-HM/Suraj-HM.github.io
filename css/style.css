@@ -1,0 +1,168 @@
+
+
+
+
+body {
+    background: rgb(78, 75, 75);
+    font-family: 'Roboto Mono';
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+}
+
+header {
+    border: 2px, solid, rgb(63, 54, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(63, 54, 54);
+    width: 100%;
+    color: white;
+}
+
+nav {
+    border: 2px, solid, rgb(63, 54, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(63, 54, 54);
+    width: 100%;
+    color: white;
+}
+
+canvas {
+    background-color: darkslategray;
+    border: solid 2px black;
+    padding: 5px;
+    margin: 5px;
+}
+
+div {
+    background-color: rgb(68, 111, 131);
+    margin: 10px;
+}
+
+
+footer {
+    align-content: flex-end;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(53, 45, 43);
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+a {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+input[type=button] {
+    background: slategray;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    color: rgb(223, 223, 223);
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0px 0px 0px;
+    height: 5px;
+    width: 60px;
+    border-radius: 5px;
+    background: #ababaf;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+
+.input_div {
+    flex-flow: row;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(73, 73, 73);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: cornflowerblue;
+}
