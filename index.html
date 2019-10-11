@@ -1,16 +1,51 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Suraj H M</title>
+    <title>Sort Visualizer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <h1>Hello Github</h1>
-    <a href="house_warming_invite.html">Link</a>
-</body>
-</html>
 
+<body onresize="resizeCanvas()">
+    <nav>
+        <a href="#">HOME</a>
+        <input type="button" value="Refresh" onclick="location.reload()">
+        <div class="dropdown">
+            <input type="button" class="dropbtn" value="OTHER PROJECTS" />
+            <div class="dropdown-content">
+                <a href="./flappybird.html">Flappy Bird</a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <span style="padding-left: 23px;">
+            Bubble Sort visualizer
+        </span>
+        <center>
+            <canvas id="bubbleSortCanvas"></canvas>
+            <br>
+        </center>
+        <center>
+            <div class="input_div">
+                <input type="button" value="Load" onclick="drawCanvas()">
+                <input type="button" value="Sort Step" onclick="bubbleSortStep()">
+                <input type="button" value="Sort" onclick="bubbleSort()">
+                <input type="range" name="Density" id="bubble_vis_density" onchange="changeWidth()" min="1" max="30">
+            </div>
+        </center>
+    </div>
+    <footer>
+        <center>
+                By<a href="mailto:alpha7.suraj@gmail.com">
+                    Suraj H M
+                </a>
+        </center>
+    </footer>
+    <script src="./js/sortvisualizer.js"></script>
+</body>
+
+</html>
